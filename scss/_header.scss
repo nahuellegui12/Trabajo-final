@@ -9,11 +9,12 @@ body{
 header{
     display: flex;
     min-height: 70px;
-    background: aqua;
+    background: $color-principal;
     box-shadow: 1px 1px 8px black;
     justify-content: space-between;
     align-items: center;
     padding-top: 5px;
+    font-family: 'Roboto', sans-serif;
     .logo{
         display: flex;
         align-items: flex-end;
