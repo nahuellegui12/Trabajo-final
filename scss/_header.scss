@@ -1,0 +1,41 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.3em;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    min-height: 70px;
+    background: aqua;
+    box-shadow: 1px 1px 8px black;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    .logo{
+        display: flex;
+        align-items: flex-end;
+        padding: 0px 40px;
+        .logo-img{
+            height: 50px;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    nav{
+        padding-right: 40px;
+        a{
+            font-weight: 600;
+            padding-right: 10px;
+        }
+        a:hover{
+            color: white;
+        }
+    }
+}
+
+
