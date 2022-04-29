@@ -1,4 +1,4 @@
-body{
+body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #333;
     font-size: 1.1rem;
@@ -6,7 +6,7 @@ body{
     margin: 0;
 }
 
-header{
+header {
     display: flex;
     min-height: 70px;
     background: $color-principal;
@@ -15,30 +15,40 @@ header{
     align-items: center;
     padding-top: 5px;
     font-family: 'Roboto', sans-serif;
-    .logo{
+
+    .logo {
         display: flex;
         align-items: flex-end;
         padding: 0px 40px;
-        .logo-img{
+
+        .logo-img {
             height: 50px;
-        }.nombre-marca{
+        }
+
+        .nombre-marca {
             font-family: 'Lobster', cursive;
             font-size: 30px;
-            text-shadow: 5px 5px 7px rgb(255, 255, 255);
+            text-shadow: 0px 3px 10px rgb(255, 255, 255);
         }
     }
-    a{
+
+    a {
         text-decoration: none;
-        color: black;
+        color: rgb(0, 0, 0);
     }
-    nav{
+
+    nav {
         padding-right: 40px;
-        a{
+
+        a {
             font-weight: 600;
             padding-right: 10px;
+            transition: 0.2s;
         }
-        a:hover{
+
+        a:hover {
             color: rgb(255, 255, 255);
+            transition: 0.2s;
         }
     }
 }

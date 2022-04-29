@@ -1,5 +1,5 @@
 .redes-container {
-  background: aqua;
+  background: #fabfb7;
   display: flex;
   max-height: auto;
   align-items: center;
@@ -44,7 +44,7 @@ body {
 header {
   display: flex;
   min-height: 70px;
-  background: aqua;
+  background: #fabfb7;
   box-shadow: 1px 1px 8px black;
   justify-content: space-between;
   align-items: center;
@@ -59,7 +59,7 @@ header {
     header .logo .nombre-marca {
       font-family: 'Lobster', cursive;
       font-size: 30px;
-      text-shadow: 5px 5px 7px white; }
+      text-shadow: 0px 3px 10px white; }
   header a {
     text-decoration: none;
     color: black; }
@@ -67,9 +67,11 @@ header {
     padding-right: 40px; }
     header nav a {
       font-weight: 600;
-      padding-right: 10px; }
+      padding-right: 10px;
+      transition: 0.2s; }
     header nav a:hover {
-      color: white; }
+      color: white;
+      transition: 0.2s; }
 
 @media (max-width: 770px) {
   .header {
