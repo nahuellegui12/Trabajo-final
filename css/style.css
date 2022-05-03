@@ -73,6 +73,59 @@ header {
       color: white;
       transition: 0.2s; }
 
+.nav-principal {
+  margin: 20px; }
+  .nav-principal .container-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2px 0 grey;
+    padding: 10px;
+    margin: 20px 0; }
+    .nav-principal .container-principal .container-texto {
+      display: flex;
+      flex-direction: column; }
+      .nav-principal .container-principal .container-texto h2 {
+        font-size: 35px;
+        line-height: 40px; }
+        .nav-principal .container-principal .container-texto h2 .resaltar {
+          background: #fabfb7;
+          border-radius: 5px; }
+      .nav-principal .container-principal .container-texto p {
+        font-size: 20px; }
+    .nav-principal .container-principal img {
+      width: 40%;
+      min-width: 250px; }
+  .nav-principal .envios-pagos {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .nav-principal .envios-pagos ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      height: 100%; }
+      .nav-principal .envios-pagos ul .medios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+        margin: 30px; }
+      .nav-principal .envios-pagos ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        margin: 0px 20px;
+        padding: 20px 20px;
+        border-radius: 50%;
+        list-style: none;
+        background: #fabfb7; }
+        .nav-principal .envios-pagos ul li i {
+          font-size: 30px; }
+
 @media (max-width: 770px) {
   .header {
     flex-direction: column; }
@@ -89,4 +142,7 @@ header {
     nav a {
       font-weight: 90px;
       padding: 10px 0;
-      display: block; } }
+      display: block; }
+  .container-principal {
+    display: flex;
+    flex-direction: column; } }

@@ -21,5 +21,10 @@
             display: block;
         }
     }
+
+    .container-principal{
+        display: flex;
+        flex-direction: column;
+    }  
 }
 

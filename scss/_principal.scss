@@ -1,0 +1,67 @@
+.nav-principal {
+    margin: 20px;
+    .container-principal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 2px 0 grey;
+        padding: 10px;
+        margin: 20px 0;
+        .container-texto {
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                font-size: 35px;
+                line-height: 40px;
+                .resaltar{
+                    background: $color-principal;
+                    border-radius: 5px;
+                }
+            }
+
+            p{
+                font-size: 20px;
+            }
+        }
+        img{
+            width: 40%;    
+            min-width: 250px;
+        }
+    }
+
+    .envios-pagos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:50%;
+            height: 100%;
+            .medios{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: baseline;
+                margin: 30px;
+            }
+            li{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 60px;
+                height: 60px;
+                margin: 0px 20px;
+                padding: 20px 20px;
+                border-radius: 50%;
+                list-style: none;
+                background: $color-principal;
+                i{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
