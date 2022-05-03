@@ -110,7 +110,7 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: baseline;
+        align-items: center;
         margin: 30px; }
       .nav-principal .envios-pagos ul li {
         display: flex;
