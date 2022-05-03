@@ -104,8 +104,8 @@ header {
     .nav-principal .envios-pagos ul {
       display: flex;
       justify-content: center;
-      align-items: center;
-      width: 50%;
+      align-items: start;
+      width: 100%;
       height: 100%; }
       .nav-principal .envios-pagos ul .medios {
         display: flex;
