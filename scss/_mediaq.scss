@@ -25,6 +25,11 @@
     .container-principal{
         display: flex;
         flex-direction: column;
-    }  
+    }
+    
+    .card-container{
+        flex-direction: column;
+    }
 }
+
 

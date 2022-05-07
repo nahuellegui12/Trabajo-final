@@ -1,0 +1,55 @@
+.nosotros-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 20px;
+    .card-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 60vh;
+        background: #fbfbfb;
+        border-radius: 2px;
+        box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, .2);
+        .cabezal{
+            border-right: 1px solid #ddd;
+            
+            a{
+                position: relative;
+                display: block;
+            }
+            a:hover img{
+                box-shadow: 0 0 0 12px rgba(250, 191, 183, 0.8);
+            }
+            img{
+                width: 60%;
+                border-radius: 50%;
+                box-shadow: 0 0 0 8px rgba(250, 191, 183, 0.5);
+                transition: .2s;
+            }
+        }
+        .descripcion-nosotros{
+           
+            position: relative;
+            
+            p{
+                margin: 20px 30px;
+            }
+            .social-nosotros{
+                margin-top: 15px;
+                a{
+                    display: inline-block;
+                    color: rgb(43, 43, 43);
+                    padding: 0 5px;
+                }
+            }
+        }
+        
+    }
+}
+
+.cabezal, .descripcion-nosotros{
+    text-align: center;
+}
