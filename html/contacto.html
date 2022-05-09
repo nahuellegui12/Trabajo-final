@@ -28,28 +28,33 @@
         </nav>
     </header>
 
-    <nav class="nosotros-container">
-        <div class="card-container">
-            <div class="cabezal">
-                <a href="#">
-                    <img src="../multimedia/galgui-3.png" alt="">
-                </a>
-                <h3>PetShop</h3>
-                <h4>Tarjeta de presentacion</h4>
-            </div>
-            <div class="descripcion-nosotros">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Id earum recusandae ratione ipsa, quas, maxime ea quo
-                    dolorem laboriosam, quis autem voluptates vel soluta odit.
-                <div class="social-nosotros">
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+    <main>
+        <form class="form">
+            <h2 class="form-titulo">Contactate con nosotros</h2>
+            <p class="form-parrafo">Aun no viste nuestros productos? <a href="productos.html" class="font-link">Entra aqui</a></p>
+            
+            <div class="form-container">
+                <div class="form-grupo">
+                    <input type="text" id="nombre" class="form-input" placeholder=" ">
+                    <label for="nombre" class="form-label">Nombre</label> 
+                    <span class="form-line"></span>
                 </div>
-                </p>
+                <div class="form-grupo">
+                    <input type="text" id="mail" class="form-input" placeholder=" ">
+                    <label for="mail" class="form-label">Email</label> 
+                    <span class="form-line"></span>
+                </div>
+                <div class="form-grupo">
+                    <input type="text" id="telefono" class="form-input" placeholder=" ">
+                    <label for="telefono" class="form-label">Numero de telefono</label> 
+                    <span class="form-line"></span>
+                </div>
+                <input type="submit" class="form-submit" value="Enviar">
             </div>
-        </div>
-    </nav>
+        </form>
+    </main>
+
+    </form>
 
     <footer>
         <div class="redes-container">
@@ -60,5 +65,6 @@
             </ul>
         </div>
     </footer>
+
 </body>
 </html>

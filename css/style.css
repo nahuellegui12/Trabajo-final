@@ -39,7 +39,8 @@ body {
   color: #333;
   font-size: 1.1rem;
   line-height: 1.3em;
-  margin: 0; }
+  margin: 0;
+  background: #fcfcfc; }
 
 header {
   display: flex;
@@ -214,6 +215,76 @@ header {
   .container-productos .producto:hover {
     box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.2); }
 
+.form {
+  margin: auto;
+  width: 40vw;
+  max-width: 500px;
+  padding: 4.5em 3em;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px -5px rgba(27, 27, 27, 0.3);
+  text-align: center; }
+  .form .form-titulo {
+    font-size: 2rem;
+    margin-bottom: .5em; }
+  .form .form-parrafo {
+    font-weight: 300; }
+    .form .form-parrafo .font-link {
+      font-weight: 400;
+      color: #000; }
+  .form .form-container {
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em; }
+    .form .form-container .form-grupo {
+      position: relative;
+      --color: #5757577e; }
+      .form .form-container .form-grupo .form-input {
+        width: 100%;
+        background: none;
+        color: #706e6e;
+        font-size: 1rem;
+        padding: .6em .3em;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid #fabfb7; }
+      .form .form-container .form-grupo .form-label {
+        color: #fabfb7;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 5px;
+        transform: translateY(10px);
+        transition: transform .5s, color .3s; }
+      .form .form-container .form-grupo .form-line {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #f18172;
+        transform: scale(0);
+        transform: left bottom;
+        transition: transform .4s; }
+  .form .form-submit {
+    background-color: #3866f2;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1em;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+    transition: .2s; }
+  .form .form-submit:hover {
+    background: #063ee6;
+    transition: .3s; }
+  .form .form-input:focus + .form-label,
+  .form .form-input:not(:placeholder-shown) + .form-label {
+    transform: translateY(-12px) scale(0.7);
+    transform-origin: left top; }
+  .form .form-input:focus ~ .form-line,
+  .form .form-input:not(:placeholder-shown) + .form-line {
+    transform: scale(1); }
+
 @media (max-width: 770px) {
   .header {
     flex-direction: column; }
@@ -236,3 +307,7 @@ header {
     flex-direction: column; }
   .card-container {
     flex-direction: column; } }
+
+@media (max-width: 425px) {
+  .form-titulo {
+    font-size: 1.8rem; } }

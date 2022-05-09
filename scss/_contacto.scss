@@ -1,0 +1,82 @@
+.form{
+    margin: auto;
+    width: 40vw;
+    max-width: 500px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgba(27, 27, 27, 0.3);
+    text-align: center;
+    .form-titulo{
+        font-size: 2rem;
+        margin-bottom: .5em;
+    }
+    .form-parrafo{
+        font-weight: 300;
+        .font-link{
+            font-weight: 400;
+            color: #000;
+        }
+    }
+    .form-container{
+        margin-top: 3em;
+        display: grid;
+        gap: 2.5em;
+        .form-grupo{
+            position: relative;
+            --color: #5757577e;
+            .form-input{
+                width: 100%;
+                background: none;
+                color: #706e6e;
+                font-size: 1rem;
+                padding: .6em .3em;
+                border: none;
+                outline: none;
+                border-bottom: 2px solid $color-principal;
+            }
+            .form-label{
+                color: $color-principal;
+                cursor: pointer;
+                position: absolute;
+                top: 0;
+                left: 5px;
+                transform: translateY(10px);
+                transition: transform .5s, color .3s;
+            }
+            .form-line{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: #f18172;
+                transform: scale(0);
+                transform: left bottom;
+                transition: transform .4s;
+            }
+        }
+    }
+    .form-submit{
+        background-color: #3866f2;
+        color: #fff;
+        font-weight: 300;
+        font-size: 1em;
+        padding: .8em 0;
+        border: none;
+        border-radius: .5em;
+        transition: .2s;
+    }
+    .form-submit:hover{
+        background: #063ee6;
+        transition: .3s;
+    }
+    .form-input:focus + .form-label,
+    .form-input:not(:placeholder-shown) + .form-label{
+        transform: translateY(-12px) scale(.7);
+        transform-origin: left top;
+    }
+    .form-input:focus ~ .form-line,
+    .form-input:not(:placeholder-shown) + .form-line{
+        transform: scale(1);
+    }
+}
