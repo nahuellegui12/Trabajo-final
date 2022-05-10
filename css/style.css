@@ -266,7 +266,7 @@ header {
         transform: left bottom;
         transition: transform .4s; }
   .form .form-submit {
-    background-color: #3866f2;
+    background-color: #f77665;
     color: #fff;
     font-weight: 300;
     font-size: 1em;
@@ -275,7 +275,7 @@ header {
     border-radius: .5em;
     transition: .2s; }
   .form .form-submit:hover {
-    background: #063ee6;
+    background: #eb4f3a;
     transition: .3s; }
   .form .form-input:focus + .form-label,
   .form .form-input:not(:placeholder-shown) + .form-label {
