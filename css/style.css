@@ -301,10 +301,9 @@ header {
     .ubicacion-container .iframe iframe {
       width: 50vw;
       height: 60vh;
-      min-width: 150px;
+      min-width: 300px;
       border-radius: 30px;
-      box-shadow: 4px 4px 10px 0 grey;
-      margin-left: 70px; }
+      box-shadow: 4px 4px 10px 0 grey; }
     .ubicacion-container .iframe h3 {
       font-size: 40px; }
   .ubicacion-container img {
@@ -335,6 +334,8 @@ header {
     flex-direction: column; }
   .card-container {
     flex-direction: column; }
+  .social-nosotros {
+    display: none; }
   .ubicacion-container {
     flex-direction: column; }
     .ubicacion-container .iframe {
