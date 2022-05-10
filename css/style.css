@@ -285,6 +285,34 @@ header {
   .form .form-input:not(:placeholder-shown) + .form-line {
     transform: scale(1); }
 
+.ubicacion-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 100px;
+  height: 100%;
+  width: 100%; }
+  .ubicacion-container .iframe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .ubicacion-container .iframe iframe {
+      width: 50vw;
+      height: 60vh;
+      min-width: 150px;
+      border-radius: 30px;
+      box-shadow: 4px 4px 10px 0 grey;
+      margin-left: 70px; }
+    .ubicacion-container .iframe h3 {
+      font-size: 40px; }
+  .ubicacion-container img {
+    margin: 0 0 0 0;
+    width: 350px;
+    height: 470px;
+    margin-left: 100px; }
+
 @media (max-width: 770px) {
   .header {
     flex-direction: column; }
@@ -306,7 +334,16 @@ header {
     display: flex;
     flex-direction: column; }
   .card-container {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .ubicacion-container {
+    flex-direction: column; }
+    .ubicacion-container .iframe {
+      display: flex;
+      align-items: center;
+      align-items: center;
+      justify-content: center; }
+    .ubicacion-container img {
+      display: none; } }
 
 @media (max-width: 425px) {
   .form-titulo {

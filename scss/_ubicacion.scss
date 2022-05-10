@@ -1,0 +1,32 @@
+.ubicacion-container{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 100px;
+    height: 100%;
+    width: 100%;
+    .iframe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        iframe{
+            width: 50vw;
+            height: 60vh;
+            min-width: 150px;
+            border-radius: 30px;
+            box-shadow: 4px 4px 10px 0 grey;
+            margin-left: 70px;
+        }
+        h3{
+            font-size: 40px;
+        }
+    }
+    img{
+        margin: 0 0 0 0;
+        width: 350px;
+        height: 470px;
+        margin-left: 100px;
+    }
+}
